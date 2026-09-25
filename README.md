@@ -1,5 +1,7 @@
 # adapter-cloudflare keeps Vitest from exiting
 
+Reported in [sveltejs/kit#17215](https://github.com/sveltejs/kit/issues/17215).
+
 Minimal reproduction: `@sveltejs/adapter-cloudflare` starts wrangler's
 `getPlatformProxy()` from its Vite `configureServer` hook and never disposes
 it. Under Vitest, the tests pass and then `vitest --run` hangs for 10 seconds
