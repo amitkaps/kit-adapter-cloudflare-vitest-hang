@@ -1,0 +1,20 @@
+{
+	"name": "kit-adapter-cloudflare-vitest-hang",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"prepare": "svelte-kit sync",
+		"test": "vitest --run"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-cloudflare": "8.0.0-next.7",
+		"@sveltejs/kit": "3.0.0-next.29",
+		"@sveltejs/vite-plugin-svelte": "7.3.1",
+		"svelte": "5.57.1",
+		"typescript": "6.0.3",
+		"vite": "8.3.1",
+		"vitest": "5.0.2",
+		"wrangler": "4.140.0"
+	}
+}
